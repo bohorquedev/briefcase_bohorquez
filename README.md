@@ -55,7 +55,7 @@ git clone https://github.com/bohorquedev/briefcase_bohorquez.git
 2. Entrar al directorio:
 
 ```bash
-cd TU-REPOSITORIO
+cd Briefcase
 ```
 
 3. Abrir el archivo `index.html` en el navegador.

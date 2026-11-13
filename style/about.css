@@ -1,0 +1,473 @@
+/* ABOUT GENERAL */
+
+.about-section {
+    width: 100%;
+    color: #E6F1FF;
+}
+
+
+/* PROFILE */
+
+.about-profile {
+    max-width: 1150px;
+    margin: auto;
+    padding: 50px 0;
+
+    display: grid;
+    grid-template-columns: 1.3fr 0.8fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.section-label {
+    color: #64FFDA;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-description h1 {
+    font-size: 42px;
+    margin: 8px 0;
+}
+
+.profile-description h3 {
+    color: #A8B8D0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.profile-description p {
+    color: #8892B0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 15px 0 20px;
+}
+
+
+/* RESUME BUTTON */
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 18px;
+
+    color: #64FFDA;
+    background: transparent;
+    border: 1px solid #64FFDA;
+    border-radius: 4px;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+
+/* PROFILE IMAGE */
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+
+    border: 1px solid #8892B0;
+    border-radius: 50%;
+}
+
+
+/* PROFILE INFORMATION */
+
+.profile-information {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    padding-left: 40px;
+    border-left: 1px solid #294766;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-item i {
+    color: #64FFDA;
+    font-size: 23px;
+}
+
+.info-item span {
+    color: #64FFDA;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+
+.info-item p {
+    color: #C5D5E8;
+    font-size: 13px;
+    margin: 3px 0 0;
+}
+
+
+/* SKILLS */
+
+.about-skills {
+    border-top: 1px solid #294766;
+    border-bottom: 1px solid #294766;
+
+    padding: 25px max(calc((100% - 1150px) / 2), 30px);
+
+    display: grid;
+    grid-template-columns: 0.9fr 2fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.skills-description h2 {
+    font-size: 24px;
+    margin: 5px 0 12px;
+}
+
+.skills-description p {
+    color: #8892B0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px;
+
+    border: 1px solid #294766;
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+.skill-item:hover {
+    border-color: #64FFDA;
+    transform: translateY(-3px);
+}
+
+.skill-item i {
+    color: #A8C4E0;
+    font-size: 28px;
+}
+
+.skill-item span {
+    color: #C5D5E8;
+    font-size: 13px;
+}
+
+
+/* EDUCATION AND STATS */
+
+.about-journey {
+    max-width: 1150px;
+    margin: auto;
+    padding: 30px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+
+/* EDUCATION */
+
+.education-section {
+    padding-right: 35px;
+    border-right: 1px solid #294766;
+}
+
+.education-section h2,
+.stats-section h2 {
+    font-size: 25px;
+    margin: 5px 0 20px;
+}
+
+.education-timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.education-timeline::before {
+    content: "";
+
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    bottom: 15px;
+
+    width: 2px;
+    background-color: #294766;
+}
+
+.education-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.education-item::before {
+    content: "";
+
+    position: absolute;
+    left: -30px;
+    top: 8px;
+
+    width: 9px;
+    height: 9px;
+
+    background-color: #64FFDA;
+    border-radius: 50%;
+}
+
+.education-item h3 {
+    font-size: 15px;
+    margin: 0 0 5px;
+}
+
+.education-item p {
+    color: #8892B0;
+    font-size: 13px;
+    margin: 0;
+}
+
+.education-date {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    padding: 5px 9px;
+
+    color: #C5D5E8;
+    background-color: #294766;
+    border-radius: 5px;
+
+    font-size: 11px;
+}
+
+
+/* STATS */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 8px;
+
+    border: 1px solid #294766;
+    border-radius: 7px;
+
+    text-align: center;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    border-color: #64FFDA;
+    transform: translateY(-3px);
+}
+
+.stat-card i {
+    color: #64FFDA;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    color: #64FFDA;
+    font-size: 22px;
+    margin: 0 0 8px;
+}
+
+.stat-card p {
+    color: #8892B0;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/* INTERESTS */
+
+.about-interests {
+    border-top: 1px solid #294766;
+    border-bottom: 1px solid #294766;
+
+    padding: 25px max(calc((100% - 1150px) / 2), 30px);
+
+    display: grid;
+    grid-template-columns: 1.2fr 2.5fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.interests-description h2 {
+    font-size: 23px;
+    margin: 5px 0 10px;
+}
+
+.interests-description p {
+    color: #8892B0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.interest-item {
+    text-align: center;
+}
+
+.interest-item i {
+    color: #64FFDA;
+    font-size: 25px;
+}
+
+.interest-item h3 {
+    color: #C5D5E8;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 8px 0 5px;
+}
+
+.interest-item p {
+    color: #8892B0;
+    font-size: 10px;
+    margin: 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .about-profile,
+    .about-journey {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .about-profile {
+        grid-template-columns: 1fr 0.7fr;
+    }
+
+    .profile-information {
+        grid-column: 1 / -1;
+        border-left: none;
+        border-top: 1px solid #294766;
+        padding: 25px 0 0;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-interests {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .about-profile {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .profile-image {
+        grid-row: 1;
+    }
+
+    .profile-image img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .profile-description h1 {
+        font-size: 34px;
+    }
+
+    .profile-information {
+        grid-template-columns: 1fr;
+    }
+
+    .about-skills {
+        grid-template-columns: 1fr;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .about-journey {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .education-section {
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #294766;
+        padding-bottom: 25px;
+    }
+
+    .education-date {
+        position: static;
+        display: inline-block;
+        margin-top: 8px;
+    }
+
+    .about-interests {
+        padding: 30px;
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+}

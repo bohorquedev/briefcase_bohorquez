@@ -471,3 +471,310 @@
     }
 
 }
+
+/* =========================================
+   ABOUT - RESPONSIVE
+   Conserva el diseño original
+========================================= */
+
+/* Evitar conflictos con el main de Home */
+#main {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.about-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Evitar que el contenido se salga de sus columnas */
+.about-profile,
+.about-skills,
+.about-journey,
+.about-interests {
+    min-width: 0;
+}
+
+.profile-description,
+.profile-information,
+.skills-description,
+.education-section,
+.stats-section,
+.interests-description {
+    min-width: 0;
+}
+
+.profile-information p {
+    overflow-wrap: anywhere;
+}
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .about-profile {
+        width: 90%;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 35px;
+    }
+
+    .profile-image img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .profile-information {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        padding: 25px 0 0;
+        border-left: none;
+        border-top: 1px solid #294766;
+    }
+
+    .about-skills {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 5%;
+    }
+
+    .about-journey {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .about-interests {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 5%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 12px;
+    }
+}
+
+/* =========================================
+   TABLETS PEQUEÑAS Y MÓVILES
+========================================= */
+
+@media (max-width: 768px) {
+
+    .about-profile {
+        width: 88%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 35px 0;
+    }
+
+    .profile-description {
+        grid-row: 2;
+    }
+
+    .profile-image {
+        grid-row: 1;
+    }
+
+    .profile-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-information {
+        grid-row: 3;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .profile-description h1 {
+        font-size: clamp(30px, 6vw, 42px);
+    }
+
+    .profile-description h3 {
+        font-size: 15px;
+    }
+
+    .about-journey {
+        width: 88%;
+        grid-template-columns: 1fr;
+        padding: 30px 0;
+    }
+
+    .education-section {
+        padding-right: 0;
+        padding-bottom: 25px;
+        border-right: none;
+        border-bottom: 1px solid #294766;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .about-skills {
+        padding: 30px 6%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .about-interests {
+        padding: 30px 6%;
+    }
+}
+
+/* =========================================
+   MÓVILES
+========================================= */
+
+@media (max-width: 480px) {
+
+    .about-profile {
+        width: 90%;
+        gap: 25px;
+        padding: 30px 0;
+    }
+
+    .profile-image img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .profile-description {
+        text-align: left;
+    }
+
+    .profile-description h1 {
+        font-size: 32px;
+    }
+
+    .profile-description h3 {
+        font-size: 14px;
+    }
+
+    .profile-description p {
+        font-size: 13px;
+    }
+
+    .profile-information {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .info-item {
+        gap: 15px;
+    }
+
+    .info-item p {
+        font-size: 12px;
+    }
+
+    .about-skills {
+        padding: 25px 5%;
+    }
+
+    .skills-description h2 {
+        font-size: 22px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .skill-item {
+        gap: 10px;
+        padding: 12px 10px;
+    }
+
+    .skill-item i {
+        font-size: 23px;
+    }
+
+    .skill-item span {
+        font-size: 11px;
+    }
+
+    .about-journey {
+        width: 90%;
+        padding: 25px 0;
+    }
+
+    .education-section h2,
+    .stats-section h2 {
+        font-size: 22px;
+    }
+
+    .education-item h3 {
+        font-size: 14px;
+    }
+
+    .education-item p {
+        font-size: 12px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 17px 8px;
+    }
+
+    .about-interests {
+        padding: 25px 5%;
+    }
+
+    .interests-description h2 {
+        font-size: 22px;
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 12px;
+    }
+
+    .interest-item p {
+        font-size: 11px;
+    }
+}
+
+/* =========================================
+   MÓVILES PEQUEÑOS
+========================================= */
+
+@media (max-width: 360px) {
+
+    .profile-description h1 {
+        font-size: 28px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-item {
+        padding: 10px 7px;
+    }
+
+    .skill-item span {
+        font-size: 10px;
+    }
+
+}

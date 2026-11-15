@@ -42,7 +42,6 @@ Briefcase/
 └── img/
 ```
 
-*La estructura puede variar según la organización final de los archivos del proyecto.*
 
 ## Instalación y ejecución
 

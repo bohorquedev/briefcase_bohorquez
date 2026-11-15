@@ -22,7 +22,7 @@ El objetivo de este proyecto es contar con un espacio digital donde pueda mostra
 ## Estructura del proyecto
 
 ```text
-Briefcase/
+briefcase_bohorquez/
 │
 ├── index.html
 │

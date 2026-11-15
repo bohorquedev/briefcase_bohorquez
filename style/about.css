@@ -1,4 +1,4 @@
-/* ABOUT GENERAL */
+
 
 .about-section {
     width: 100%;
@@ -6,7 +6,7 @@
 }
 
 
-/* PROFILE */
+
 
 .about-profile {
     max-width: 1150px;
@@ -46,8 +46,6 @@
 }
 
 
-/* RESUME BUTTON */
-
 .btn-outline {
     display: inline-flex;
     align-items: center;
@@ -72,7 +70,7 @@
 }
 
 
-/* PROFILE IMAGE */
+
 
 .profile-image {
     display: flex;
@@ -88,9 +86,6 @@
     border: 1px solid #8892B0;
     border-radius: 50%;
 }
-
-
-/* PROFILE INFORMATION */
 
 .profile-information {
     display: flex;
@@ -125,7 +120,6 @@
 }
 
 
-/* SKILLS */
 
 .about-skills {
     border-top: 1px solid #294766;
@@ -185,7 +179,6 @@
 }
 
 
-/* EDUCATION AND STATS */
 
 .about-journey {
     max-width: 1150px;
@@ -198,7 +191,7 @@
 }
 
 
-/* EDUCATION */
+
 
 .education-section {
     padding-right: 35px;
@@ -273,7 +266,7 @@
 }
 
 
-/* STATS */
+
 
 .stats-grid {
     display: grid;
@@ -320,7 +313,7 @@
 }
 
 
-/* INTERESTS */
+
 
 .about-interests {
     border-top: 1px solid #294766;
@@ -373,8 +366,6 @@
     margin: 0;
 }
 
-
-/* RESPONSIVE */
 
 @media (max-width: 1000px) {
 
@@ -472,12 +463,7 @@
 
 }
 
-/* =========================================
-   ABOUT - RESPONSIVE
-   Conserva el diseño original
-========================================= */
 
-/* Evitar conflictos con el main de Home */
 #main {
     display: block;
     width: 100%;
@@ -493,7 +479,7 @@
     overflow: hidden;
 }
 
-/* Evitar que el contenido se salga de sus columnas */
+
 .about-profile,
 .about-skills,
 .about-journey,
@@ -514,9 +500,6 @@
     overflow-wrap: anywhere;
 }
 
-/* =========================================
-   TABLETS
-========================================= */
 
 @media (max-width: 1000px) {
 
@@ -569,9 +552,7 @@
     }
 }
 
-/* =========================================
-   TABLETS PEQUEÑAS Y MÓVILES
-========================================= */
+
 
 @media (max-width: 768px) {
 
@@ -638,9 +619,7 @@
     }
 }
 
-/* =========================================
-   MÓVILES
-========================================= */
+
 
 @media (max-width: 480px) {
 
@@ -754,10 +733,6 @@
         font-size: 11px;
     }
 }
-
-/* =========================================
-   MÓVILES PEQUEÑOS
-========================================= */
 
 @media (max-width: 360px) {
 

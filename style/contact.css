@@ -1,4 +1,4 @@
-/* CONTACT SECTION */
+
 
 .contact-section {
     background-color: #0A192F;
@@ -13,7 +13,6 @@
     margin: 0 auto;
 }
 
-/* HEADER */
 
 .contact-header {
     text-align: center;
@@ -43,7 +42,6 @@
     font-size: 16px;
 }
 
-/* CONTENT */
 
 .contact-content {
     display: grid;
@@ -52,7 +50,7 @@
     align-items: start;
 }
 
-/* CONTACT INFO */
+
 
 .contact-info h2,
 .contact-form-container h2 {
@@ -121,7 +119,7 @@
     border-radius: 50%;
 }
 
-/* FORM */
+
 
 .contact-form-container {
     background-color: #11243A;
@@ -194,7 +192,7 @@
     margin-left: 8px;
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 768px) {
 

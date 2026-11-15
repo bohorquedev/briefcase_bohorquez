@@ -1,7 +1,4 @@
 
-/* ==============================
-   CONFIGURACIÓN GENERAL
-============================== */
 
 * {
     box-sizing: border-box;
@@ -42,9 +39,7 @@ h2:hover {
     color: rgba(226, 232, 240, 1);
 }
 
-/* ==============================
-   NAVBAR
-============================== */
+
 
 .navbar {
     background-color: transparent;
@@ -89,9 +84,6 @@ h2:hover {
     color: rgba(148, 163, 184, 0.8);
 }
 
-/* ==============================
-   BOTONES
-============================== */
 
 button {
     display: inline-block;
@@ -114,9 +106,7 @@ button:hover {
     margin-left: 10px;
 }
 
-/* ==============================
-   CONTENIDO PRINCIPAL
-============================== */
+
 
 .home-container {
     width: min(1100px, 90%);
@@ -181,9 +171,7 @@ button:hover {
     border-radius: 50%;
 }
 
-/* =========================================
-   FOOTER GENERAL
-========================================= */
+
 
 footer {
     width: 100%;
@@ -197,7 +185,6 @@ footer {
     border-top: 1px solid #294766;
 }
 
-/* LOGO Y NOMBRE */
 
 .footer-brand {
     display: flex;
@@ -216,7 +203,7 @@ footer {
     text-decoration: none;
 }
 
-/* REDES SOCIALES */
+
 
 .footer-socials {
     display: flex;
@@ -235,7 +222,7 @@ footer {
     transform: translateY(-3px);
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 650px) {
 
@@ -281,9 +268,6 @@ footer {
 
 }
 
-/* ==============================
-   MÓVILES
-============================== */
 
 @media (max-width: 650px) {
 
